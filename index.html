@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifrado Cesar en JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>CIFRADO CESAR</h1>
+    </header>
+
+    <main>
+        <script src="app.js"></script>
+
+        <div class="border">
+            <div class="title">
+                ENCRYPT
+            </div>
+            <div id="box01">
+
+                <div>
+                    <form method="post">
+                
+                        <div class="message">
+                            <label>Message to encrypt:</label>
+                        </div>
+                        <input type="text" name="toEncrypt" placeholder="...">
+                        <input type="button" name="send" value="Encrypt" onclick="encryptMessage('toEncrypt');">
+                    
+                    </form>
+                        
+                    <p>Message encrypted:</p>        
+                    <div class="result">
+                        <p id="encrypt">...</p>
+                    </div>
+                </div>
+        
+            
+            </div>
+        </div>
+    
+
+        <div class="border">
+            <div class="title">
+                DECRYPT
+            </div>
+            <div id="box02">
+        
+                <div>
+                    <form method="post">
+                
+                        <div class="message">
+                            <label>Message to decrypt:</label>
+                        </div>
+                        <input type="text" name="toDecrypt" placeholder="...">
+                        <input type="button" name="send" value="Decrypt" onclick="decryptMessage('toDecrypt');">
+                    
+                    </form>
+            
+                
+                    <p>Message decrypted:</p>
+                
+                    <div class="result">
+                        <p id="decrypt">...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
